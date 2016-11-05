@@ -1,0 +1,14 @@
+{% if cos.count > 0 %}
+
+{% for x in cos %}
+
+	<h2> {{ x.name }} </h2>
+	
+        <img src="{{ x.image.url }}">
+                        
+                        
+{% endfor %}
+
+{% else %}
+<h2> Brak obrazk w bazie <h2>
+{% endif %}
